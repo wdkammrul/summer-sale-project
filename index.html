@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer Sale</title>
+    <!-- daisyUI link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font work sans  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-work-sans {
+        font-family: "Work Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-work-sans overflow-x-hidden">
+    <header class="mx-auto h-auto lg:h-auto">
+      <div class="hero bg-[#F9F6E2]">
+        <div class="hero-content flex-col lg:flex-row-reverse gap-10">
+          <img src="images/Summer 1.png" class="lg:max-w-xl" />
+          <div>
+            <h3
+              class="text-center text-6xl md:text-7xl lg:text-3xl text-[#111111]"
+            >
+              ---SALE FEVER---
+            </h3>
+            <h1 class="text-8xl lg:text-5xl font-bold py-7">
+              Purchase TK 200 or <br />
+              above & get<span class="text-[#E527B2]"> 20% off</span>
+            </h1>
+            <div class="text-center">
+              <p class="text-[#111111] text-5xl lg:text-2xl">
+                Use Promo Code
+                <span
+                  class="bg-[#E527B2] text-white px-8 py-4 ml-2 rounded-lg font-semibold"
+                  >SELL200</span
+                >
+                <!-- <button class="btn text-white md:text-4xl bg-[#E527B2] hover:bg-[#c51a31]">
+                  SELL200
+                </button> -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="bg-[#F8F8F8] mx-auto h-auto lg:h-auto">
+      <!-- kitchenware section -->
+      <section class="py-20 md:py-12 lg:py-10">
+        <div class="lg:flex lg:flex-row gap-6 justify-center">
+          <!-- all card div  -->
+          <div class="grid grid-row-3 justify-center">
+            <!-- kitchenware section -->
+            <h1 class="text-8xl lg:text-4xl font-bold">Kitchenware</h1>
+            <!-- 3 card  -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-6 mt-8 lg:mt-6"
+            >
+              <!-- card-1  -->
+              <div
+                onclick="handleClick(this)"
+                class="card lg:w-80 h-[340px] lg:h-96 bg-[#FFFFFF] shadow-xl rounded-lg"
+              >
+                <div class="bg-[#0B0B0B0D] m-5 p-8 rounded-lg">
+                  <img class="lg:w-24 lg:h-32 m-auto" src="images/prod1.png" />
+                </div>
+                <div class="card-body text-center py-4">
+                  <div class="rating m-auto">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                  </div>
+
+                  <h2
+                    class="card-name-price text-4xl lg:text-xl font-semibold mt-1"
+                  >
+                    K. Accessories
+                  </h2>
+                  <p
+                    class="card-name-price text-4xl lg:text-xl font-normal text-[#0B0B0B80]"
+                  >
+                    39.00 TK
+                  </p>
+                </div>
+              </div>
+
+              <!-- card-2  -->
+              <div
+                onclick="handleClick(this)"
+                class="card lg:w-80 h-[345px] lg:h-96 bg-[#FFFFFF] shadow-xl rounded-lg"
+              >
+                <div class="bg-[#0B0B0B0D] m-5 p-8 rounded-lg">
+                  <img class="lg:w-24 lg:h-32 m-auto" src="images/prod2.png" />
+                </div>
+                <div class="card-body text-center py-4">
+                  <div class="rating m-auto">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                  </div>
+
+                  <h2
+                    class="card-name-price text-4xl lg:text-xl font-semibold mt-1"
+                  >
+                    Rutimaker
+                  </h2>
+                  <p
+                    class="card-name-price text-4xl lg:text-xl font-normal mt- text-[#0B0B0B80]"
+                  >
+                    25.00 TK
+                  </p>
+                </div>
+              </div>
+
+              <!--card-3 -->
+              <div
+                onclick="handleClick(this)"
+                class="card lg:w-80 h-[340px] lg:h-96 bg-[#FFFFFF] shadow-xl rounded-lg"
+              >
+                <div class="bg-[#0B0B0B0D] m-5 p-8 rounded-lg">
+                  <img class="lg:w-24 lg:h-32 m-auto" src="images/prod3.png" />
+                </div>
+                <div class="card-body text-center py-4">
+                  <div class="rating m-auto">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                  </div>
+                  <h2
+                    class="card-name-price text-4xl lg:text-xl font-semibold mt-1"
+                  >
+                    Home Cooker
+                  </h2>
+                  <p
+                    class="card-name-price text-4xl lg:text-xl font-normal text-[#0B0B0B80]"
+                  >
+                    49.00 TK
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2nd section -->
+            <h1
+              class="text-8xl lg:text-4xl font-bold py-8 lg:py-0 lg:pt-9 mt-8 lg:mt-2"
+            >
+              Sportswear
+            </h1>
+            <!-- 3 card  -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-6 mt-8 lg:mt-6"
+            >
+              <!--card-4 -->
+              <div
+                onclick="handleClick(this)"
+                class="card lg:w-80 h-[340px] lg:h-96 bg-[#FFFFFF] shadow-xl rounded-lg"
+              >
+                <div class="bg-[#0B0B0B0D] m-5 p-8 rounded-lg">
+                  <img class="lg:w-36 lg:h-32 m-auto" src="images/prod4.png" />
+                </div>
+                <div class="card-body text-center py-4">
+                  <div class="rating m-auto">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                  </div>
+                  <h2
+                    id="home-cooker"
+                    class="card-name-price text-4xl lg:text-xl font-semibold mt-1"
+                  >
+                    Sports Back Cap
+                  </h2>
+                  <p
+                    class="card-name-price text-4xl lg:text-xl font-normal text-[#0B0B0B80]"
+                  >
+                    49.00 TK
+                  </p>
+                </div>
+              </div>
+
+              <!--card-5 -->
+              <div
+                onclick="handleClick(this)"
+                class="card lg:w-80 h-[350px] lg:h-96 bg-[#FFFFFF] shadow-xl rounded-lg"
+              >
+                <div class="bg-[#0B0B0B0D] m-5 p-8 rounded-lg">
+                  <img class="lg:w-36 lg:h-32 m-auto" src="images/prod5.png" />
+                </div>
+                <div class="card-body text-center py-4">
+                  <div class="rating m-auto">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                  </div>
+                  <h2
+                    id="home-cooker"
+                    class="card-name-price text-4xl lg:text-xl font-semibold mt-1"
+                  >
+                    Full Jersey Set
+                  </h2>
+                  <p
+                    class="card-name-price text-4xl lg:text-xl font-normal text-[#0B0B0B80]"
+                  >
+                    69.00 TK
+                  </p>
+                </div>
+              </div>
+
+              <!--card-6 -->
+              <div
+                onclick="handleClick(this)"
+                class="card lg:w-80 h-[355px] lg:h-96 bg-[#FFFFFF] shadow-xl rounded-lg"
+              >
+                <div class="bg-[#0B0B0B0D] m-5 p-8 rounded-lg">
+                  <img class="lg:w-36 lg:h-32 m-auto" src="images/prod6.png" />
+                </div>
+                <div class="card-body text-center py-4">
+                  <div class="rating m-auto">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                  </div>
+                  <h2
+                    id="home-cooker"
+                    class="card-name-price text-4xl lg:text-xl font-semibold mt-1"
+                  >
+                    Sports cates
+                  </h2>
+                  <p
+                    class="card-name-price text-4xl lg:text-xl font-normal text-[#0B0B0B80]"
+                  >
+                    159.00 TK
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- cart section  -->
+          <div class="mt-[48px] lg:mt-[48px] w-[450px] lg:w-80 m-auto lg:m-0">
+            <div class="bg-[#FFFFFF] p-6 rounded-lg">
+              <h1 class="text-5xl lg:text-2xl font-medium">Have coupon?</h1>
+              <div class="join mt-5 lg:mt-3">
+                <input
+                  class="input coupon-input input-bordered join-item w-44"
+                  placeholder="Coupon Code"
+                />
+                <button
+                  id="apply-btn"
+                  class="btn join-item rounded-lg apply-btn apply-disabled text-white bg-[#E527B2] hover:bg-[#c51a31] capitalize"
+                  disabled
+                >
+                  Apply
+                </button>
+              </div>
+            </div>
+
+            <div id="show-home-cooker" class="bg-[#FFFFFF] p-6 rounded-lg mt-6">
+              <div class="selected-items font-semibold text-4xl lg:text-xl">
+                <ol id="selected-items" class="list-decimal ml-12 lg:ml-6"></ol>
+              </div>
+
+              <div class="w-64 my-5 border border-spacing-1">
+                <hr />
+              </div>
+              <div id="total-text" class="text-5xl lg:text-2xl font-medium">
+                Total Price: 0.00 TK
+              </div>
+              <h1
+                class="text-5xl lg:text-2xl font-medium py-5 lg:py-2 discount"
+              >
+                Discount: 0.00 TK
+              </h1>
+              <h1 class="text-5xl lg:text-2xl font-medium total">
+                Total: 0.00 TK
+              </h1>
+              <div class="w-64 my-5 border border-spacing-1">
+                <hr />
+              </div>
+              <div class="w-64 mt-6 border-spacing-1">
+                <button
+                  class="btn make-purchase-btn text-white bg-[#E527B2] hover:bg-[#c51a31] w-full capitalize"
+                  onclick="modal.showModal()"
+                  disabled
+                >
+                  Make Purchase
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <dialog id="modal" class="modal">
+        <form method="dialog" class="modal-box py-16 px-11 overflow-y-hidden">
+          <img src="images/congo.png" class="mx-auto py-5" alt="" srcset="" />
+          <h3 class="font-bold text-5xl text-center">Congratulations</h3>
+          <p class="py-4 text-center">Your Purchase the product</p>
+          <div class="">
+            <button
+              onclick="resetBtn()"
+              class="btn bg-[#E527B2] hover:bg-[#c51a31] ml-36 text-white"
+            >
+              Go Home
+            </button>
+          </div>
+        </form>
+      </dialog>
+    </footer>
+
+    <script src="js/homeCooker.js"></script>
+  </body>
+</html>
